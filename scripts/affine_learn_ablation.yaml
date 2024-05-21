@@ -1,5 +1,5 @@
 program: scripts/run_single_exp.sh
-name: circular_conv_ablation_params_zinc
+name: affine_learn_ablation
 method: grid
 parameters:
   dataset: # DS
