@@ -31,9 +31,9 @@ python data/get_dataset_statistics.py
 
 ### Baseline Models
 
-To reproduce the baseline model results, run the script:
+To reproduce the baseline model results, use the configuration in:
 ```bash
-Use the configuration in `scripts/run_paper_exp_sweep.yaml`
+`scripts/run_paper_exp_sweep.yaml`
 ```
 You can use weights and biases sweep in order to run it.
 
