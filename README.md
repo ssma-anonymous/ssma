@@ -33,9 +33,9 @@ python data/get_dataset_statistics.py
 
 To reproduce the baseline model results, run the script:
 ```bash
-scripts/run_sweep.py NONE scripts/run_paper_exp_sweep.yaml 0 1 2 3
+Use the configuration in `scripts/run_paper_exp_sweep.yaml`
 ```
-Read the script for more details. This script will launch a Weights and Biases sweep to run all the relevant experiments.
+You can use weights and biases sweep in order to run it.
 
 ### SSMA Models
 
