@@ -3,7 +3,7 @@ name: compression_ablation
 method: grid
 parameters:
   dataset: # DS
-    values: ["imdb_binary", "proteins", "ogbn_arxiv", "zinc"]
+    values: ["ogbn_arxiv", "zinc"]
   layer: # Layer
     values: ["gat", "gcn", "gin"]
   ssma: # Whether to use SSMA or not
