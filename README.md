@@ -1,4 +1,4 @@
-# Deep Set Aggregation for Message Passing Graph Neural Networks
+# Sequential Signal Mixing Aggregation for Message Passing Graph Neural Networks
 ![Method overview](method_fig.png)
 ## Overview
 
