@@ -62,11 +62,14 @@ def main():
     agg_values = []
 
     for ds_name in args.datasets:
-        print(f"Working on DS: {ds_name}")
-        ds = dataset_map[ds_name]()
-        curr_row = analyze_single_ds(ds)
-        curr_row["name"] = ds_name
-        agg_values.append(curr_row)
+        try:
+            print(f"Working on DS: {ds_name}")
+            ds = dataset_map[ds_name]()
+            curr_row = analyze_single_ds(ds)
+            curr_row["name"] = ds_name
+            agg_values.append(curr_row)
+        except Exception as e:
+            print(f"Error in {ds_name}: {e}")
 
     df = pd.DataFrame.from_dict(agg_values)
     cols = df.columns.tolist()
