@@ -3,19 +3,19 @@ name: circular_conv_ablation_params_zinc
 method: grid
 parameters:
   dataset: # DS
-    values: ["zinc"]
+    values: ["imdb_binary", "mutag]
   layer: # Layer
-    values: ["gcn", "gat", "gin", "pna"]
+    values: ["gcn", "gat", "graphgps"]
   ssma: # Whether to use SSMA or not
     values: ["true"]
   runs: # Num runs
     values: [5]
   mlp_compression:
-    values: [0.25, 0.5, 0.75, 1.0]
+    values: [0.25]
   use_attention:
-    values: ["true", "false"]
+    values: ["true"]
   max_neighbors:
-    values: [2, 3, 4]
+    values: [4]
   parameter_budget:
     values: [100000, 200000, 400000, 800000, 1600000, 3200000]
 
