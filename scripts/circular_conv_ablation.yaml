@@ -1,0 +1,26 @@
+program: scripts/run_single_exp.sh
+name: circular_conv_ablation_params_zinc
+method: grid
+parameters:
+  dataset: # DS
+    values: ["imdb_binary", "mutag]
+  layer: # Layer
+    values: ["gcn", "gat", "graphgps"]
+  ssma: # Whether to use SSMA or not
+    values: ["true"]
+  runs: # Num runs
+    values: [5]
+  mlp_compression:
+    values: [0.25]
+  use_attention:
+    values: ["true"]
+  max_neighbors:
+    values: [4]
+  parameter_budget:
+    values: [100000, 200000, 400000, 800000, 1600000, 3200000]
+
+command:
+  - ${env}
+  - sh
+  - ${program}
+  - ${args_no_hyphens}
